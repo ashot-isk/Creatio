@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "e329f3ae-ecca-4d8a-9f0b-3fdd417a30c9",
+    "Name": "UsrFinConsultant_Detail",
+    "ModifiedOnUtc": "\/Date(1692692203000)\/",
+    "Parent": {
+      "UId": "01eb38ee-668a-42f0-999d-c2534f979089",
+      "Name": "BaseGridDetailV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Финансовый консультант detail",
+    "DependsOn": []
+  }
+}

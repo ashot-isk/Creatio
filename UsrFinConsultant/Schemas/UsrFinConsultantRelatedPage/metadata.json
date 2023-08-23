@@ -1,0 +1,28 @@
+{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "AddonSchemaManager",
+      "UId": "d6d7c02b-f323-4f0a-ab3f-24474dad009c",
+      "A2": "UsrFinConsultantRelatedPage",
+      "A5": "6f71e54c-1960-40c9-94f6-073fd67699ab",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "5530927f-22ea-e7c9-4ccf-506d3a6c2ed2",
+      "B8": "0.0.0.0",
+      "AD1": "3c68d742-bca3-442b-af9f-3c8aa049363b",
+      "AD2": "EntitySchemaManager",
+      "AD3": "RelatedPage",
+      "AD5": "3a2d6f51-1bfc-4c17-aacb-b53de4866b7c",
+      "AD4": {
+        "Pages": [
+          {
+            "UId": "8a357087-d551-4204-b80c-3b9e5d3b7659",
+            "PageSchemaUId": "3bac79b1-44e0-4dff-a04e-b63d86ea9a91",
+            "IsDefault": true
+          }
+        ]
+      }
+    }
+  }
+}
