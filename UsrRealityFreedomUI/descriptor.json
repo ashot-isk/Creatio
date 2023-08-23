@@ -12,6 +12,11 @@
         "PackageVersion": "7.8.0",
         "Name": "CrtCore",
         "Type": 1
+      },
+      {
+        "UId": "0f1116a2-88a9-4a2c-b333-bb375de9976f",
+        "PackageVersion": "7.8.0",
+        "Name": "BaseFinance"
       }
     ]
   }
