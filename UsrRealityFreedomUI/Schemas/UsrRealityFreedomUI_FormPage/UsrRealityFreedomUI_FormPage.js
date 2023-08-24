@@ -37,7 +37,7 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 					"visible": true,
 					"icon": "database-icon",
 					"clicked": {
-						"request": "crt.SaveRecordRequest"
+						"request": "usr.MyButtonRequest"
 					},
 					"clickMode": "default"
 				},
@@ -250,7 +250,22 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 			},
 			"primaryDataSourceName": "PDS"
 		}/**SCHEMA_MODEL_CONFIG*/,
-		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
+		handlers: /**SCHEMA_HANDLERS*/[
+		
+			{
+				request: "usr.MyButtonRequest",
+				/* Implementation of the custom query handler. */
+				handler: async (request, next) => {
+					this.console.log("Button works...");
+					Terrasoft.showInformation("My button was pressed.");
+					var price = await request.$context.NumberAttribute_3a4sh3d;
+					this.console.log("Price = " + price);
+					
+					/* Call the next handler if it exists and return its result. */
+					return next?.handle(request);
+				}
+			}
+		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{
 			"usr.DGValidator": {
