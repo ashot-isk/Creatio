@@ -1,12 +1,12 @@
 ﻿{
   "Descriptor": {
-    "UId": "151f307b-09e3-4b4d-b039-b604d6c3a2d5",
-    "Name": "UsrRealityTypeFreedomUI_Values",
-    "ModifiedOnUtc": "\/Date(1692860367000)\/",
+    "UId": "4db9ed9d-202a-1934-80cd-aae70ed49a08",
+    "Name": "UsrRealityOfferTypeFreedomUI_4db9ed9d202a193480cdaae70ed49a08",
+    "ModifiedOnUtc": "\/Date(1692860249000)\/",
     "InstallType": 0,
     "Schema": {
-      "UId": "151f307b-09e3-4b4d-b039-b604d6c3a2d5",
-      "Name": "UsrRealityTypeFreedomUI"
+      "UId": "fc7f7418-77be-4b63-9132-8b4e98b45ae1",
+      "Name": "UsrRealityOfferTypeFreedomUI"
     },
     "Columns": [
       {
