@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "a99bda8d-f091-4a12-ae92-709ec71da634",
+    "Name": "UsrRealityVisitFreedomUIPage",
+    "ModifiedOnUtc": "\/Date(1692959216000)\/",
+    "Parent": {
+      "UId": "ecdcc8ff-272c-4957-9381-7d74ce17e140",
+      "Name": "BaseMiniPageTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Страница редактирования Просмотр недвижимости(FreedomUI)"
+  }
+}
