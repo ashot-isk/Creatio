@@ -3,7 +3,10 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Недвижимость(FreedomUI) form page" />
+			<Item Name="LocalizableStrings.addRecord_ixhro2e_caption.Value" Value="Добавить" />
+			<Item Name="LocalizableStrings.addRecord_nkklb04_caption.Value" Value="Добавить" />
 			<Item Name="LocalizableStrings.addRecord_v07bdpy_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_wo46q44_caption.Value" Value="Добавить" />
 			<Item Name="LocalizableStrings.addRecord_yu12wbe_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.Button_qep35no_caption.Value" Value="Пыщь!" />
 			<Item Name="LocalizableStrings.ComboBox_ht22sdw_label.Value" Value="sdfdgdfghfg" />

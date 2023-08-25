@@ -3,6 +3,9 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Недвижимость(FreedomUI)" />
+			<Item Name="Columns.UsrCity.Caption" Value="Город " />
+			<Item Name="Columns.UsrCountry.Caption" Value="Страна " />
+			<Item Name="Columns.UsrManager.Caption" Value="Менеджер" />
 			<Item Name="Columns.UsrName.Caption" Value="Название" />
 		</Items>
 	</Group>
