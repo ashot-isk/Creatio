@@ -6,6 +6,13 @@
 			<Item Name="LocalizableStrings.addRecord_ixhro2e_caption.Value" Value="Добавить" />
 			<Item Name="LocalizableStrings.addRecord_nkklb04_caption.Value" Value="Добавить" />
 			<Item Name="LocalizableStrings.addRecord_wo46q44_caption.Value" Value="Добавить" />
+			<Item Name="LocalizableStrings.ExpansionPanel_c7uua77_title.Value" Value="Шаблон списка" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_npu9nm7_caption.Value" Value="Добавить" />
+			<Item Name="LocalizableStrings.GridDetailExportDataBtn_vo373l5_caption.Value" Value="Экспорт в Excel" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_1eupdg5_caption.Value" Value="Импорт данных" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_660rx8s_caption.Value" Value="Обновить" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_kwzj0r8_placeholder.Value" Value="Поиск" />
+			<Item Name="LocalizableStrings.GridDetailSettingsBtn_tlciu3v_caption.Value" Value="Действия" />
 		</Items>
 	</Group>
 </Resources>
