@@ -2,7 +2,7 @@
 <Resources Culture="ko-KR">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Страница записи Недвижимость(FreedomUI) (Бизнес правила)" />
+			<Item Name="Caption" Value="Недвижимость(FreedomUI) (Бизнес правила)" />
 		</Items>
 	</Group>
 </Resources>

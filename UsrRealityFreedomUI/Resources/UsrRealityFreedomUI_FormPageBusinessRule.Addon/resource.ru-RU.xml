@@ -2,7 +2,8 @@
 <Resources Culture="ru-RU">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Недвижимость(FreedomUI) form page (Business rules)" />
+			<Item Name="AddonConfig.Rules.336eeb46-9d24-14f8-4086-38d411799ff8.Caption" Value="Скрыть элементы: Комментарий" />
+			<Item Name="Caption" Value="Страница записи Недвижимость(FreedomUI) (Бизнес правила)" />
 		</Items>
 	</Group>
 </Resources>

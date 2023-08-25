@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.51c7df02-3119-4995-0348-9d0c34c893e9.Caption" Value="Установить статический фильтр: Менеджер" />
+			<Item Name="Caption" Value="Недвижимость(FreedomUI) (Бизнес правила)" />
+		</Items>
+	</Group>
+</Resources>
