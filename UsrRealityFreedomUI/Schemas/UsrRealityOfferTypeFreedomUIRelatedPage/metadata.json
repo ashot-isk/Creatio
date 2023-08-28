@@ -1,0 +1,23 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "AddonSchemaManager",
+      "UId": "d7756bc6-41ef-4b76-93aa-3b955e4e6c75",
+      "A2": "UsrRealityOfferTypeFreedomUIRelatedPage",
+      "A5": "50d81f33-5a31-4fde-a44e-00024f02dc58",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "3a6ccade-417c-4966-84b1-7483af0d6638",
+      "B8": "8.0.10.4620",
+      "AD1": "fc7f7418-77be-4b63-9132-8b4e98b45ae1",
+      "AD2": "EntitySchemaManager",
+      "AD3": "RelatedPage",
+      "AD5": "3a2d6f51-1bfc-4c17-aacb-b53de4866b7c",
+      "AD4": {
+  "Pages": [],
+  "TypeColumnUId": null
+}
+    }
+  }
+}

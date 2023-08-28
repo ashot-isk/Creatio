@@ -2,12 +2,12 @@
   "Descriptor": {
     "UId": "a251d86a-ff8a-4d8b-a6bc-f62f169a5292",
     "Name": "UsrRealityFreedomUI_FormPage",
-    "ModifiedOnUtc": "\/Date(1692960872000)\/",
+    "ModifiedOnUtc": "\/Date(1693207183000)\/",
     "Parent": {
       "UId": "3b2e117f-8c6b-4ca5-80a2-7ebb497cddf9",
       "Name": "PageWithTabsFreedomTemplate"
     },
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Страница записи Недвижимость(FreedomUI)"
+    "Caption": "Недвижимость(FreedomUI) form page"
   }
 }

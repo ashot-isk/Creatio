@@ -2,13 +2,12 @@
   "Descriptor": {
     "UId": "fc7f7418-77be-4b63-9132-8b4e98b45ae1",
     "Name": "UsrRealityOfferTypeFreedomUI",
-    "ModifiedOnUtc": "\/Date(1692775966000)\/",
+    "ModifiedOnUtc": "\/Date(1693206761000)\/",
     "Parent": {
       "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
       "Name": "BaseLookup"
     },
     "ManagerName": "EntitySchemaManager",
-    "Caption": "Тип предложения недвижимости (FreedomUI)",
-    "DependsOn": []
+    "Caption": "Тип предложения"
   }
 }

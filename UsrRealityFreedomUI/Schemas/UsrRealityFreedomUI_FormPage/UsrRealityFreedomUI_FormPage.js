@@ -16,6 +16,18 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 			},
 			{
 				"operation": "merge",
+				"name": "CardToggleTabPanel",
+				"values": {
+					"styleType": "default",
+					"bodyBackgroundColor": "primary-contrast-500",
+					"selectedTabTitleColor": "auto",
+					"tabTitleColor": "auto",
+					"underlineSelectedTabColor": "auto",
+					"headerBackgroundColor": "auto"
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "Feed",
 				"values": {
 					"dataSourceName": "PDS",
@@ -425,8 +437,19 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 					"color": "default",
 					"size": "medium",
 					"clicked": {
-						"request": "crt.CreateRecordRequest"
-					}
+						"request": "crt.CreateRecordRequest",
+						"params": {
+							"entityName": "UsrRealityVisitFreedomUI",
+							"defaultValues": [
+								{
+									"attributeName": "UsrPerentRealty",
+									"value": "$Id"
+								}
+							]
+						}
+					},
+					"visible": true,
+					"clickMode": "default"
 				},
 				"parentName": "FlexContainer_22v0akd",
 				"propertyName": "items",
@@ -447,7 +470,8 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 						"params": {
 							"config": {
 								"loadType": "reload"
-							}
+							},
+							"dataSourceName": "GridDetail_yrqv4n9DS"
 						}
 					}
 				},
@@ -482,7 +506,10 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 					"color": "default",
 					"size": "medium",
 					"clicked": {
-						"request": "crt.ExportDataGridToExcelRequest"
+						"request": "crt.ExportDataGridToExcelRequest",
+						"params": {
+							"viewName": "GridDetail_yrqv4n9"
+						}
 					}
 				},
 				"parentName": "GridDetailSettingsBtn_tlciu3v",
@@ -499,7 +526,10 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 					"color": "default",
 					"size": "medium",
 					"clicked": {
-						"request": "crt.ImportDataRequest"
+						"request": "crt.ImportDataRequest",
+						"params": {
+							"entitySchemaName": "UsrRealityVisitFreedomUI"
+						}
 					}
 				},
 				"parentName": "GridDetailSettingsBtn_tlciu3v",
@@ -512,7 +542,10 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 				"values": {
 					"type": "crt.SearchFilter",
 					"placeholder": "#ResourceString(GridDetailSearchFilter_kwzj0r8_placeholder)#",
-					"iconOnly": true
+					"iconOnly": true,
+					"targetAttributes": [
+						"GridDetail_yrqv4n9"
+					]
 				},
 				"parentName": "FlexContainer_22v0akd",
 				"propertyName": "items",
@@ -574,7 +607,53 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 						"attribute": "GridDetail_yrqv4n9_SelectionState"
 					},
 					"visible": true,
-					"fitContent": true
+					"fitContent": true,
+					"primaryColumnName": "GridDetail_yrqv4n9DS_Id",
+					"columns": [
+						{
+							"id": "9c4ba803-27de-bb78-9700-daf4cddad3e1",
+							"code": "GridDetail_yrqv4n9DS_UsrComment",
+							"caption": "#ResourceString(GridDetail_yrqv4n9DS_UsrComment)#",
+							"dataValueType": 28
+						},
+						{
+							"id": "44d56009-e897-b8e2-366d-4b10399f599e",
+							"code": "GridDetail_yrqv4n9DS_UsrVisitDateTime",
+							"path": "UsrVisitDateTime",
+							"caption": "#ResourceString(GridDetail_yrqv4n9DS_UsrVisitDateTime)#",
+							"dataValueType": 7
+						},
+						{
+							"id": "deaab3f6-4a35-264d-a5e4-495bcb17179b",
+							"code": "GridDetail_yrqv4n9DS_UsrComment",
+							"path": "UsrComment",
+							"caption": "#ResourceString(GridDetail_yrqv4n9DS_UsrComment)#",
+							"dataValueType": 28
+						},
+						{
+							"id": "bd358366-1f08-38e0-6360-85082883af6c",
+							"code": "GridDetail_yrqv4n9DS_UsrPotetialCustomer",
+							"path": "UsrPotetialCustomer",
+							"caption": "#ResourceString(GridDetail_yrqv4n9DS_UsrPotetialCustomer)#",
+							"dataValueType": 10,
+							"referenceSchemaName": "Contact"
+						},
+						{
+							"id": "44998d0c-dfcc-c00d-d26e-639b6f371e56",
+							"code": "GridDetail_yrqv4n9DS_UsrPerentRealty",
+							"path": "UsrPerentRealty",
+							"caption": "#ResourceString(GridDetail_yrqv4n9DS_UsrPerentRealty)#",
+							"dataValueType": 10,
+							"referenceSchemaName": "UsrRealityFreedomUI"
+						},
+						{
+							"id": "00e659df-ea26-882a-470b-93c08e8797a7",
+							"code": "GridDetail_yrqv4n9DS_Id",
+							"path": "Id",
+							"caption": "#ResourceString(GridDetail_yrqv4n9DS_Id)#",
+							"dataValueType": 0
+						}
+					]
 				},
 				"parentName": "GridContainer_7591mv1",
 				"propertyName": "items",
@@ -650,6 +729,50 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 					"modelConfig": {
 						"path": "PDS.UsrCity"
 					}
+				},
+				"GridDetail_yrqv4n9": {
+					"isCollection": true,
+					"modelConfig": {
+						"path": "GridDetail_yrqv4n9DS",
+						"filterAttributes": [
+							{
+								"loadOnChange": true,
+								"name": "GridDetail_yrqv4n9_PredefinedFilter"
+							}
+						]
+					},
+					"viewModelConfig": {
+						"attributes": {
+							"GridDetail_yrqv4n9DS_UsrComment": {
+								"modelConfig": {
+									"path": "GridDetail_yrqv4n9DS.UsrComment"
+								}
+							},
+							"GridDetail_yrqv4n9DS_UsrVisitDateTime": {
+								"modelConfig": {
+									"path": "GridDetail_yrqv4n9DS.UsrVisitDateTime"
+								}
+							},
+							"GridDetail_yrqv4n9DS_UsrPotetialCustomer": {
+								"modelConfig": {
+									"path": "GridDetail_yrqv4n9DS.UsrPotetialCustomer"
+								}
+							},
+							"GridDetail_yrqv4n9DS_UsrPerentRealty": {
+								"modelConfig": {
+									"path": "GridDetail_yrqv4n9DS.UsrPerentRealty"
+								}
+							},
+							"GridDetail_yrqv4n9DS_Id": {
+								"modelConfig": {
+									"path": "GridDetail_yrqv4n9DS.Id"
+								}
+							}
+						}
+					}
+				},
+				"GridDetail_yrqv4n9_PredefinedFilter": {
+					"value": null
 				}
 			}
 		}/**SCHEMA_VIEW_MODEL_CONFIG*/,
@@ -661,9 +784,41 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 						"entitySchemaName": "UsrRealityFreedomUI"
 					},
 					"scope": "page"
+				},
+				"GridDetail_yrqv4n9DS": {
+					"type": "crt.EntityDataSource",
+					"scope": "viewElement",
+					"config": {
+						"entitySchemaName": "UsrRealityVisitFreedomUI",
+						"attributes": {
+							"UsrComment": {
+								"path": "UsrComment"
+							},
+							"UsrVisitDateTime": {
+								"path": "UsrVisitDateTime"
+							},
+							"UsrPotetialCustomer": {
+								"path": "UsrPotetialCustomer"
+							},
+							"UsrPerentRealty": {
+								"path": "UsrPerentRealty"
+							},
+							"Id": {
+								"path": "Id"
+							}
+						}
+					}
 				}
 			},
-			"primaryDataSourceName": "PDS"
+			"primaryDataSourceName": "PDS",
+			"dependencies": {
+				"GridDetail_yrqv4n9DS": [
+					{
+						"attributePath": "UsrPerentRealty",
+						"relationPath": "PDS.Id"
+					}
+				]
+			}
 		}/**SCHEMA_MODEL_CONFIG*/,
 		handlers: /**SCHEMA_HANDLERS*/[
 		
