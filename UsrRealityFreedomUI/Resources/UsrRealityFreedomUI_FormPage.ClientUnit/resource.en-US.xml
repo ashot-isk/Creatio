@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Недвижимость(FreedomUI) form page" />
+			<Item Name="LocalizableStrings.addRecord_14tepsz_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_ixhro2e_caption.Value" Value="Добавить" />
 			<Item Name="LocalizableStrings.addRecord_nkklb04_caption.Value" Value="Добавить" />
 			<Item Name="LocalizableStrings.addRecord_v07bdpy_caption.Value" Value="Add new" />
@@ -17,6 +18,9 @@
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_660rx8s_caption.Value" Value="Обновить" />
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_kwzj0r8_placeholder.Value" Value="Поиск" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_tlciu3v_caption.Value" Value="Действия" />
+			<Item Name="LocalizableStrings.NumberInput_0tox4oa_label.Value" Value="Number" />
+			<Item Name="LocalizableStrings.NumberInput_kcld0s5_label.Value" Value="Процент  комиссии , от 0 до 100" />
+			<Item Name="LocalizableStrings.NumberInput_o26lwlg_label.Value" Value="Commission percentage, from 0 to 100" />
 		</Items>
 	</Group>
 </Resources>

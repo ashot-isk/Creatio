@@ -114,7 +114,27 @@
   "E17": "UsrManagerId",
   "E18": "UsrManagerName"
 }
-~ MetaData.Schema.D2 ["ae0e45ca-c495-4fe7-a39d-3ab7278e1617","e80190a5-03b2-4095-90f7-a193a960adee","ebf6bb93-8aa6-4a01-900d-c6ea67affe21","9928edec-4272-425a-93bb-48743fee4b04","3015559e-cbc6-406a-88af-07f7930be832","3fabd836-6a53-4d8d-9069-6df88d9dae1e","22d97f89-649b-4724-a9ec-8e6b6837fa86","e1c9b208-bfdb-fd2e-7e57-dd3a632406b1","46513d2c-0ee2-a843-ad8a-b31fa71f0a03","bda2446a-a46a-e185-5d63-bdcc4da035cc","8d02caf2-9543-3fca-7426-5878c17ff376","45b6ba5b-e7f0-bb06-d1f0-5dfa3e633fa3","ccbc099f-7c4d-6ac1-707b-8fb9bcceea90","0ba77a44-ccc1-603d-ad03-8d0e4aee421a","6efe698d-7ee3-d00c-bec2-550370e02c70"]
++ MetaData.Schema.D2 {
+  "UId": "c03e4977-644f-4276-8ac0-904c3afd7ca6",
+  "A2": "UsrRegion",
+  "A3": "8a8b039e-955d-494d-abad-f16c0a192f31",
+  "A4": "8a8b039e-955d-494d-abad-f16c0a192f31",
+  "A5": "50d81f33-5a31-4fde-a44e-00024f02dc58",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "fa4eb497-e6a3-4f8c-8568-5df4bd2a8b91",
+  "E6": true,
+  "E17": "UsrRegionId",
+  "E18": "UsrRegionName"
+}
++ MetaData.Schema.D2 {
+  "UId": "c8314386-0f51-0a1d-8f2c-24148397686f",
+  "A2": "UsrCommissionUSD",
+  "A3": "8a8b039e-955d-494d-abad-f16c0a192f31",
+  "A4": "8a8b039e-955d-494d-abad-f16c0a192f31",
+  "A5": "50d81f33-5a31-4fde-a44e-00024f02dc58",
+  "S2": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
+}
+~ MetaData.Schema.D2 ["ae0e45ca-c495-4fe7-a39d-3ab7278e1617","e80190a5-03b2-4095-90f7-a193a960adee","ebf6bb93-8aa6-4a01-900d-c6ea67affe21","9928edec-4272-425a-93bb-48743fee4b04","3015559e-cbc6-406a-88af-07f7930be832","3fabd836-6a53-4d8d-9069-6df88d9dae1e","22d97f89-649b-4724-a9ec-8e6b6837fa86","e1c9b208-bfdb-fd2e-7e57-dd3a632406b1","46513d2c-0ee2-a843-ad8a-b31fa71f0a03","bda2446a-a46a-e185-5d63-bdcc4da035cc","8d02caf2-9543-3fca-7426-5878c17ff376","45b6ba5b-e7f0-bb06-d1f0-5dfa3e633fa3","ccbc099f-7c4d-6ac1-707b-8fb9bcceea90","0ba77a44-ccc1-603d-ad03-8d0e4aee421a","6efe698d-7ee3-d00c-bec2-550370e02c70","c03e4977-644f-4276-8ac0-904c3afd7ca6","c8314386-0f51-0a1d-8f2c-24148397686f"]
 = MetaData.Schema.D20.A2 "UsrRealityFreedomUIEvents"
 = MetaData.Schema.D36.A3 "8a8b039e-955d-494d-abad-f16c0a192f31"
 = MetaData.Schema.D36.BS1 false
