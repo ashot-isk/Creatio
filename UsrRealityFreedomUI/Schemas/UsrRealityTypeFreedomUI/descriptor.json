@@ -8,6 +8,7 @@
       "Name": "BaseLookup"
     },
     "ManagerName": "EntitySchemaManager",
-    "Caption": "Тип недвижимости (FreedomUI)"
+    "Caption": "Тип недвижимости (FreedomUI)",
+    "DependsOn": []
   }
 }

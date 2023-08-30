@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "3ed089ce-9943-4730-828e-54e08d73fcf2",
+    "Name": "UsrAddRealtyVisitFreedomUIProcess",
+    "ModifiedOnUtc": "\/Date(1693398628000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Добавить просмотры недвижимости",
+    "DependsOn": []
+  }
+}
