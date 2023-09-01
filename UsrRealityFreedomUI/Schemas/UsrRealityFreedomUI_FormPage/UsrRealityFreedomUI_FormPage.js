@@ -798,7 +798,12 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 				"StringAttribute_oin9asi": {
 					"modelConfig": {
 						"path": "PDS.UsrComment"
-					}
+					},
+					"validators": {
+                        "required": {
+                            "type": "crt.Required"
+                        }
+                    }
 				},
 				"LookupAttribute_adq58q8": {
 					"modelConfig": {
@@ -939,6 +944,20 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 						var commission = price * multiplier;
 						request.$context.NumberAttribute_pze6o3k = commission;
 					}
+					
+					if (request.attributeName === 'NumberAttribute_3a4sh3d') 
+                    {
+                        var price = await request.$context.NumberAttribute_3a4sh3d;
+                        if (price > 50000) 
+                        {
+                            request.$context.enableAttributeValidator('StringAttribute_oin9asi', 'required');
+                        } 
+                        else 
+                        {
+                            request.$context.disableAttributeValidator('StringAttribute_oin9asi', 'required');
+                        }
+                    }
+                    
 					/* Call the next handler if it exists and return its result. */
 					return next?.handle(request);
 				}
