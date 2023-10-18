@@ -2,14 +2,17 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Недвижимость(FreedomUI) form page" />
+			<Item Name="Caption" Value="Страница записи Недвижимость" />
 			<Item Name="LocalizableStrings.addRecord_14tepsz_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_ixhro2e_caption.Value" Value="Добавить" />
 			<Item Name="LocalizableStrings.addRecord_nkklb04_caption.Value" Value="Добавить" />
 			<Item Name="LocalizableStrings.addRecord_v07bdpy_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_wo46q44_caption.Value" Value="Добавить" />
 			<Item Name="LocalizableStrings.addRecord_yu12wbe_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.Button_dxh4m26_caption.Value" Value="Получить максимальную сумму" />
 			<Item Name="LocalizableStrings.Button_qep35no_caption.Value" Value="Пыщь!" />
+			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Отмена" />
+			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Закрыть" />
 			<Item Name="LocalizableStrings.ComboBox_ht22sdw_label.Value" Value="sdfdgdfghfg" />
 			<Item Name="LocalizableStrings.ExpansionPanel_c7uua77_title.Value" Value="Шаблон списка" />
 			<Item Name="LocalizableStrings.GridDetailAddBtn_npu9nm7_caption.Value" Value="Добавить" />
@@ -21,6 +24,7 @@
 			<Item Name="LocalizableStrings.NumberInput_0tox4oa_label.Value" Value="Number" />
 			<Item Name="LocalizableStrings.NumberInput_kcld0s5_label.Value" Value="Процент  комиссии , от 0 до 100" />
 			<Item Name="LocalizableStrings.NumberInput_o26lwlg_label.Value" Value="Commission percentage, from 0 to 100" />
+			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Сохранять" />
 		</Items>
 	</Group>
 </Resources>

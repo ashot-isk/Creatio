@@ -6,6 +6,8 @@
 			<Item Name="LocalizableStrings.addRecord_ixhro2e_caption.Value" Value="Добавить" />
 			<Item Name="LocalizableStrings.addRecord_nkklb04_caption.Value" Value="Добавить" />
 			<Item Name="LocalizableStrings.addRecord_wo46q44_caption.Value" Value="Добавить" />
+			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Отмена" />
+			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Закрыть" />
 			<Item Name="LocalizableStrings.ExpansionPanel_c7uua77_title.Value" Value="Шаблон списка" />
 			<Item Name="LocalizableStrings.GridDetailAddBtn_npu9nm7_caption.Value" Value="Добавить" />
 			<Item Name="LocalizableStrings.GridDetailExportDataBtn_vo373l5_caption.Value" Value="Экспорт в Excel" />

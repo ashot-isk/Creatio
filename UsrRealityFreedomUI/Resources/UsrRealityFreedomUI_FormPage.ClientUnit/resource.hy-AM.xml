@@ -1,10 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Resources Culture="pl-PL">
+<Resources Culture="hy-AM">
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Недвижимость(FreedomUI) form page" />
-			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Anuluj" />
-			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Zamknij" />
 		</Items>
 	</Group>
 </Resources>

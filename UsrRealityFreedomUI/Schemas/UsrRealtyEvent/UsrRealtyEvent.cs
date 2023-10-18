@@ -30,7 +30,7 @@ namespace UsrRealityFreedomUI
                 return;
             }
 
-            throw new Exception(message);
+            throw new Terrasoft.Core.LicException(message);
         }
         
         private string CheckRequiredField(object sender, EntityBeforeEventArgs e)

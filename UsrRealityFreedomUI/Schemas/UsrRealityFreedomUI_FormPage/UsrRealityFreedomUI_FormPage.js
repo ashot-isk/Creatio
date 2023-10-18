@@ -1,6 +1,45 @@
-define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
+define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(sdk)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
+			{
+				"operation": "merge",
+				"name": "SaveButton",
+				"values": {
+					"caption": "#ResourceString(SaveButton_caption)#",
+					"size": "large",
+					"iconPosition": "only-text",
+					"clickMode": "default"
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "CancelButton",
+				"values": {
+					"caption": "#ResourceString(CancelButton_caption)#",
+					"color": "default",
+					"size": "large",
+					"iconPosition": "only-text",
+					"clickMode": "default"
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "CloseButton",
+				"values": {
+					"caption": "#ResourceString(CloseButton_caption)#",
+					"size": "large",
+					"iconPosition": "only-text",
+					"clickMode": "default"
+				}
+			},
+			{
+				"operation": "remove",
+				"name": "SetRecordRightsButton"
+			},
+			{
+				"operation": "remove",
+				"name": "CardButtonToggleGroup"
+			},
 			{
 				"operation": "merge",
 				"name": "Tabs",
@@ -15,54 +54,63 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 				}
 			},
 			{
-				"operation": "merge",
-				"name": "CardToggleTabPanel",
-				"values": {
-					"styleType": "default",
-					"bodyBackgroundColor": "primary-contrast-500",
-					"selectedTabTitleColor": "auto",
-					"tabTitleColor": "auto",
-					"underlineSelectedTabColor": "auto",
-					"headerBackgroundColor": "auto"
-				}
+				"operation": "remove",
+				"name": "CardToggleTabPanel"
 			},
 			{
-				"operation": "merge",
-				"name": "Feed",
-				"values": {
-					"dataSourceName": "PDS",
-					"entitySchemaName": "UsrRealityFreedomUI"
-				}
+				"operation": "remove",
+				"name": "FeedTabContainer"
 			},
 			{
-				"operation": "merge",
-				"name": "AttachmentList",
-				"values": {
-					"columns": [
-						{
-							"id": "55936210-aaf4-407d-bc91-8abad94a5a07",
-							"code": "AttachmentListDS_Name",
-							"caption": "#ResourceString(AttachmentListDS_Name)#",
-							"dataValueType": 28,
-							"width": 200
-						}
-					]
-				}
+				"operation": "remove",
+				"name": "Feed"
+			},
+			{
+				"operation": "remove",
+				"name": "FeedTabContainerHeaderContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "FeedTabContainerHeaderLabel"
+			},
+			{
+				"operation": "remove",
+				"name": "AttachmentsTabContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "AttachmentList"
+			},
+			{
+				"operation": "remove",
+				"name": "AttachmentsTabContainerHeaderContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "AttachmentsTabContainerHeaderLabel"
+			},
+			{
+				"operation": "remove",
+				"name": "AttachmentAddButton"
+			},
+			{
+				"operation": "remove",
+				"name": "AttachmentRefreshButton"
 			},
 			{
 				"operation": "insert",
-				"name": "Button_qep35no",
+				"name": "Button_max",
 				"values": {
 					"type": "crt.Button",
-					"caption": "#ResourceString(Button_qep35no_caption)#",
-					"color": "accent",
+					"caption": "#ResourceString(Button_dxh4m26_caption)#",
+					"color": "primary",
 					"disabled": false,
-					"size": "medium",
-					"iconPosition": "left-icon",
+					"size": "large",
+					"iconPosition": "only-text",
 					"visible": true,
-					"icon": "database-icon",
+					"layoutConfig": {},
 					"clicked": {
-						"request": "usr.MyButtonRequest"
+						"request": "crt.GetMaxPrice"
 					},
 					"clickMode": "default"
 				},
@@ -800,10 +848,10 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 						"path": "PDS.UsrComment"
 					},
 					"validators": {
-                        "required": {
-                            "type": "crt.Required"
-                        }
-                    }
+						"required": {
+							"type": "crt.Required"
+						}
+					}
 				},
 				"LookupAttribute_adq58q8": {
 					"modelConfig": {
@@ -964,15 +1012,31 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 			},
 		
 			{
-				request: "usr.MyButtonRequest",
-				/* Implementation of the custom query handler. */
+				request: "crt.GetMaxPrice",
 				handler: async (request, next) => {
-					this.console.log("Button works...");
-					Terrasoft.showInformation("My button was pressed.");
-					var price = await request.$context.NumberAttribute_3a4sh3d;
-					this.console.log("Price = " + price);
-					
-					/* Call the next handler if it exists and return its result. */
+					this.console.log("Run web service button works...");
+					var typeObject = await request.$context.LookupAttribute_to3p4h7;
+					var typeId = typeObject.value;
+		
+					var offerTypeObject = await request.$context.LookupAttribute_8oqhdj4;
+					var offerTypeId =  offerTypeObject.value;
+	
+					const baseUrl = Terrasoft.utils.uri.getConfigurationWebServiceBaseUrl();
+					const transferName = "rest";
+					const serviceName = "UsrRealtyService";
+					const methodName = "GetMaxPrice";
+					const endpoint = Terrasoft.combinePath(baseUrl, transferName, serviceName, methodName);
+					var params = {
+						RealtyTypeId: typeId,
+						RealtyOfferTypeId: offerTypeId,
+					};
+
+					const httpClientService = new sdk.HttpClientService();
+					const response = await httpClientService.post(endpoint, params);
+					this.console.log("ErrorCode: " + response.body.ErrorCode);
+					this.console.log("Max price for given parameters is: " + response.body.Price);
+
+					Terrasoft.showInformation(response.body.Price);
 					return next?.handle(request);
 				}
 			}
